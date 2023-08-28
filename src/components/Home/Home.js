@@ -25,12 +25,12 @@ function Home(props) {
                 <input type='text' value={value} onChange={handleChange}></input>
                 <button type='submit'>Add Class!</button>
             </form>
-            <div className='my-classes'>
+            <div>
                 {favoriteClasses.map((favClass) =>
                     <Class name={favClass} key={favClass}></Class>
                 )}
             </div>
-            <div className='my-classes'>
+            <div>
                 {favoriteClasses.map((favClass) =>
                     <ClassGraphQL name={favClass} key={favClass}></ClassGraphQL>
                 )}
